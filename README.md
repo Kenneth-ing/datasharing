@@ -150,7 +150,9 @@ of collaboration. They may not know how to code in a scripting language. In that
 is something called [pseudocode](http://en.wikipedia.org/wiki/Pseudocode). It should look something like:
 
 A. Step 1 - take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3
+
 B. Step 2 - run the software separately for each sample
+
 C. Step 3 - take column three of outputfile.out for each sample and that is the corresponding row in the output data set
 
 You should also include information about which system (Mac/Windows/Linux) you used the software on and whether you 
