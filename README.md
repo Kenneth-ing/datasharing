@@ -47,9 +47,9 @@ raw form of data:
 You know the raw data are in the right format if you: 
 
 1. Ran no software on the data
-1. Did not modify any of the data values
-1. You did not remove any data from the data set
-1. You did not summarize the data in any way
+2. Did not modify any of the data values
+3. You did not remove any data from the data set
+4. You did not summarize the data in any way
 
 If you made any modifications of the raw data it is not the raw form of the data. Reporting modified data
 as raw data is a very common way to slow down the analysis process, since the analyst will often have to do a
@@ -62,9 +62,9 @@ and [this video](http://vimeo.com/33727555). While both the paper and the video 
 are more generally applicable:
 
 1. Each variable you measure should be in one column
-1. Each different observation of that variable should be in a different row
-1. There should be one table for each "kind" of variable
-1. If you have multiple tables, they should include a column in the table that allows them to be joined or merged
+2. Each different observation of that variable should be in a different row
+3. There should be one table for each "kind" of variable
+4. If you have multiple tables, they should include a column in the table that allows them to be joined or merged
 
 While these are the hard and fast rules, there are a number of other things that will make your data set much easier
 to handle. First is to include a row at the top of each data table/spreadsheet that contains full row names. 
@@ -92,8 +92,8 @@ For almost any data set, the measurements you calculate will need to be describe
 into the spreadsheet. The code book contains this information. At minimum it should contain:
 
 1. Information about the variables (including units!) in the data set not contained in the tidy data 
-1. Information about the summary choices you made
-1. Information about the experimental study design you used
+2. Information about the summary choices you made
+3. Information about the experimental study design you used
 
 In our genomics example, the analyst would want to know what the unit of measurement for each
 clinical/demographic variable is (age in years, treatment by name/dose, level of diagnosis and how heterogeneous). They 
@@ -111,10 +111,10 @@ units.
 When you put variables into a spreadsheet there are several main categories you will run into depending on their [data type](http://en.wikipedia.org/wiki/Statistical_data_type):
 
 1. Continuous
-1. Ordinal
-1. Categorical
-1. Missing 
-1. Censored
+2. Ordinal
+3. Categorical
+4. Missing 
+5. Censored
 
 Continuous variables are anything measured on a quantitative scale that could be any fractional number. An example
 would be something like weight measured in kg. [Ordinal data](http://en.wikipedia.org/wiki/Ordinal_data) are data that have a fixed, small (< 100) number of levels but are ordered. 
@@ -149,9 +149,9 @@ In many cases, the person who collected the data has incentive to make it tidy f
 of collaboration. They may not know how to code in a scripting language. In that case, what you should provide the statistician
 is something called [pseudocode](http://en.wikipedia.org/wiki/Pseudocode). It should look something like:
 
-1. Step 1 - take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3
-1. Step 2 - run the software separately for each sample
-1. Step 3 - take column three of outputfile.out for each sample and that is the corresponding row in the output data set
+A. Step 1 - take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3
+B. Step 2 - run the software separately for each sample
+C. Step 3 - take column three of outputfile.out for each sample and that is the corresponding row in the output data set
 
 You should also include information about which system (Mac/Windows/Linux) you used the software on and whether you 
 tried it more than once to confirm it gave the same results. Ideally, you will run this by a fellow student/labmate
@@ -171,8 +171,8 @@ checks.
 You should then expect from the statistician:
 
 1. An analysis script that performs each of the analyses (not just instructions)
-1. The exact computer code they used to run the analysis
-1. All output files/figures they generated. 
+2. The exact computer code they used to run the analysis
+3. All output files/figures they generated. 
 
 This is the information you will use in the supplement to establish reproducibility and precision of your results. Each
 of the steps in the analysis should be clearly explained and you should ask questions when you don't understand
